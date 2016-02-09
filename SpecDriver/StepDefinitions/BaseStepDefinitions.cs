@@ -4,62 +4,35 @@ using System.Linq;
 using System.Text;
 using TechTalk.SpecFlow;
 using OpenQA.Selenium;
-using Project1.Pages;
+using RyanAirProject.Pages;
 
-namespace Project1.StepDefinitions
+namespace RyanAirProject.StepDefinitions
 {
     [Binding]
     public class BaseStepDefinitions
     {
         private const string CurrentPageKey = "Current.Page";
         public static IWebDriver Driver { get; set; }
-        protected GoogleHomePageModel GoogleHomePage
-        {
-            get { return (GoogleHomePageModel)ScenarioContext.Current[CurrentPageKey]; }
-            set { ScenarioContext.Current[CurrentPageKey] = value; }
-        }
-        protected GoogleSearchResultsPageModel GoogleSearchResultsPage
-        {
-            get { return (GoogleSearchResultsPageModel)ScenarioContext.Current[CurrentPageKey]; }
-            set { ScenarioContext.Current[CurrentPageKey] = value; }
-        }
-        protected EtsySearchPageModel EtsySearchPage
-        {
-            get { return (EtsySearchPageModel)ScenarioContext.Current[CurrentPageKey]; }
-            set { ScenarioContext.Current[CurrentPageKey] = value; }
-        }
-        protected EtsySearchResultsPageModel EtsySearchResultsPage
-        {
-            get { return (EtsySearchResultsPageModel)ScenarioContext.Current[CurrentPageKey]; }
-            set { ScenarioContext.Current[CurrentPageKey] = value; }
-        }
-        protected EtsyHomePageModel EtsyHomePage
-        {
-            get { return (EtsyHomePageModel)ScenarioContext.Current[CurrentPageKey]; }
-            set { ScenarioContext.Current[CurrentPageKey] = value; }
-        }
-        protected EtsyBuyPageModel EtsyBuyPage
-        {
-            get { return (EtsyBuyPageModel)ScenarioContext.Current[CurrentPageKey]; }
-            set { ScenarioContext.Current[CurrentPageKey] = value; }
-        }
-        protected EtsyTreasuryPageModel EtsyTreasuryPage
-        {
-            get { return (EtsyTreasuryPageModel)ScenarioContext.Current[CurrentPageKey]; }
-            set { ScenarioContext.Current[CurrentPageKey] = value; }
-        }
-        protected EtsyCartPageModel EtsyCartPage
-        {
-            get { return (EtsyCartPageModel)ScenarioContext.Current[CurrentPageKey]; }
-            set { ScenarioContext.Current[CurrentPageKey] = value; }
-        }
-        protected EtsyItemPageModel EtsyItemPage
-        {
-            get { return (EtsyItemPageModel)ScenarioContext.Current[CurrentPageKey]; }
-            set { ScenarioContext.Current[CurrentPageKey] = value; }
-        }
 
-
-
+        protected RyanAirHomePageModel RyanAirHomePage
+        {
+            get { return (RyanAirHomePageModel)ScenarioContext.Current[CurrentPageKey]; }
+            set { ScenarioContext.Current[CurrentPageKey] = value; }
+        }
+        protected RyanAirChooseFlightPageModel RyanAirChooseFlightPage
+        {
+            get { return (RyanAirChooseFlightPageModel)ScenarioContext.Current[CurrentPageKey]; }
+            set { ScenarioContext.Current[CurrentPageKey] = value; }
+        }
+        protected RyanAirExtrasPageModel RyanAirExtrasPage
+        {
+            get { return (RyanAirExtrasPageModel)ScenarioContext.Current[CurrentPageKey]; }
+            set { ScenarioContext.Current[CurrentPageKey] = value; }
+        }
+        protected RyanAirPassengersPageModel RyanAirPassengersPage
+        {
+            get { return (RyanAirPassengersPageModel)ScenarioContext.Current[CurrentPageKey]; }
+            set { ScenarioContext.Current[CurrentPageKey] = value; }
+        }
     }
 }

@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{380DA30E-759F-4C38-9D7E-9D6EA721D166}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RyanAir</RootNamespace>
+    <AssemblyName>RyanAirBookFlight</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Features\RyanAir\BookFlights.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BookFlights.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\BasePageModel.cs" />
+    <Compile Include="Pages\RyanAir\RyanAirChooseFlightPageModel.cs" />
+    <Compile Include="Pages\RyanAir\RyanAirExtrasPageModel.cs" />
+    <Compile Include="Pages\RyanAir\RyanAirHomePageModel.cs" />
+    <Compile Include="Pages\RyanAir\RyanAirPassengersPageModel.cs" />
+    <Compile Include="StepDefinitions\RyanAirBookFlightsStepDefinitions.cs" />
+    <Compile Include="StepDefinitions\WebElementExtensions.cs" />
+    <Compile Include="StepDefinitions\Events.cs" />
+    <Compile Include="StepDefinitions\BaseStepDefinitions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bin\Release\RyanAirBookFlight.dll.config" />
+    <None Include="Default.srprofile" />
+    <None Include="Features\RyanAir\BookFlights.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>BookFlights.feature.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="nunit.core, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\nunit.core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.core.interfaces, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\nunit.core.interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.framework, Version=3.0.5813.39031, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.0.1\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.util, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\nunit.util.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="NUnit.VisualStudio.TestAdapter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=4cb40d35494691ac, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnitTestAdapter.2.0.0\lib\NUnit.VisualStudio.TestAdapter.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="TechTalk.SpecFlow, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecFlow.2.0.0\lib\net45\TechTalk.SpecFlow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TechTalk.SpecRun, Version=1.3.0.76, Culture=neutral, PublicKeyToken=d0fc5cc18b3b389b, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecRun.NUnit.1.3.0\lib\net40\TechTalk.SpecRun.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver, Version=2.49.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.2.49.0\lib\net40\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=2.49.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.2.49.0\lib\net40\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Release\chromedriver.exe" />
+    <Content Include="bin\Release\nunit.framework.dll" />
+    <Content Include="bin\Release\nunit.framework.xml" />
+    <Content Include="bin\Release\RyanAirBookFlight.dll" />
+    <Content Include="bin\Release\RyanAirBookFlight.pdb" />
+    <Content Include="bin\Release\TechTalk.SpecFlow.dll" />
+    <Content Include="bin\Release\TechTalk.SpecRun.dll" />
+    <Content Include="bin\Release\WebDriver.dll" />
+    <Content Include="bin\Release\WebDriver.Support.dll" />
+    <Content Include="bin\Release\WebDriver.Support.xml" />
+    <Content Include="bin\Release\WebDriver.xml" />
+    <Content Include="chromedriver.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libraries\ChromeDriver\chromedriver.exe" />
+    <Content Include="Libraries\IEDriver\IEDriverServer.exe" />
+    <Content Include="Libraries\nunit.framework.dll" />
+    <Content Include="Libraries\TechTalk.SpecFlow.dll" />
+    <Content Include="Libraries\WebDriver\Castle.Core.dll" />
+    <Content Include="Libraries\WebDriver\Ionic.Zip.dll" />
+    <Content Include="Libraries\WebDriver\Newtonsoft.Json.dll" />
+    <Content Include="Libraries\WebDriver\Selenium.WebDriverBackedSelenium.dll" />
+    <Content Include="Libraries\WebDriver\Selenium.WebDriverBackedSelenium.pdb" />
+    <Content Include="Libraries\WebDriver\Selenium.WebDriverBackedSelenium.xml" />
+    <Content Include="Libraries\WebDriver\ThoughtWorks.Selenium.Core.dll" />
+    <Content Include="Libraries\WebDriver\ThoughtWorks.Selenium.Core.pdb" />
+    <Content Include="Libraries\WebDriver\ThoughtWorks.Selenium.Core.xml" />
+    <Content Include="Libraries\WebDriver\WebDriver.dll" />
+    <Content Include="Libraries\WebDriver\WebDriver.pdb" />
+    <Content Include="Libraries\WebDriver\Webdriver.Support.dll" />
+    <Content Include="Libraries\WebDriver\Webdriver.Support.pdb" />
+    <Content Include="Libraries\WebDriver\Webdriver.Support.xml" />
+    <Content Include="Libraries\WebDriver\WebDriver.xml" />
+    <Content Include="README.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

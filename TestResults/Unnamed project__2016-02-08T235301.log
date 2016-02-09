@@ -1,0 +1,445 @@
+﻿VS filter: testpath:TestAssembly:RyanAirBookFlight/TestClass:RyanAir.Features.RyanAir.BookFlightsFeature/ParameterizedTest:BookAOneWayFlightForAdultsAndChildren/TestMethod:BookAOneWayFlightForAdultsAndChildren(%22Dublin%22%2c%22Berlin%22%2c%2211%2f03%2f2016%22%2c%222%22%2c%221%22%2c%22VISA%22%2c%225555555555555557%22%2c%22265%22%2c%2210%2f18%22%2c%22Piotr%22%2c%22Kula%22%2c%22Mr%22%2c%22Address%22%2c%22Dublin%22%2c%2212345%22%2c%22Ireland%22%2c%22example_email%40gmail.com%22%2c%22Poland%22%2c%22888888888%22%2cSystem.String%5b%5d)
+Discovering target: Default
+Discovering tests from assembly: D:\Dokumenty\automation projects\Ryanair\SpecDriver\bin\Debug\RyanAirBookFlight.dll
+Appdomain Disposed
+Test Suite Dump
+#0: Unnamed project/ - 
+#1: Default - 
+#3: RyanAirBookFlight - 
+#4: RyanAir.Features.RyanAir.BookFlightsFeature - 
+#5: BookAOneWayFlightForAdultsAndChildren - 
+#6: BookAOneWayFlightForAdultsAndChildren("Dublin","Berlin","11/03/2016","2","1","VISA","5555555555555557","265","10/18","Piotr","Kula","Mr","Address","Dublin","12345","Ireland","example_email@gmail.com","Poland","888888888",System.String[]) - TestAssembly:RyanAirBookFlight/TestClass:RyanAir.Features.RyanAir.BookFlightsFeature/ParameterizedTest:BookAOneWayFlightForAdultsAndChildren/TestMethod:BookAOneWayFlightForAdultsAndChildren(%22Dublin%22%2c%22Berlin%22%2c%2211%2f03%2f2016%22%2c%222%22%2c%221%22%2c%22VISA%22%2c%225555555555555557%22%2c%22265%22%2c%2210%2f18%22%2c%22Piotr%22%2c%22Kula%22%2c%22Mr%22%2c%22Address%22%2c%22Dublin%22%2c%2212345%22%2c%22Ireland%22%2c%22example_email%40gmail.com%22%2c%22Poland%22%2c%22888888888%22%2cSystem.String%5b%5d)
+End: Test Suite Dump -- X
+Scheduler: considering #6 for thread #0
+Scheduler: using #6 for thread #0
+Test #6 is scheduled for thread #0
+Thread #0: creating new test thread executor for RyanAirBookFlight, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null (target: Default)
+Loading SpecRun type 'TechTalk.SpecRun.Framework.TestAssemblyExecutor' from: C:\Users\Piotrek\AppData\Local\Temp\VisualStudioTestExplorerExtensions\SpecRun.Runner.1.3.0\tools\TechTalk.SpecRun.Framework.Executor.dll
+Test #6/0 is started on thread #0
+T:*** Scenario:Book a one way flight for adults and children
+T:Given I am on RyanAir home page
+T:-> done: RyanAirBookFlightsStepDefinitions.GivenIAmOnRyanAirHomePage() (4,3s)
+T:When I Select one way flight
+T:-> done: RyanAirBookFlightsStepDefinitions.WhenISelectOneWayFlight() (0,1s)
+T:When I make a booking from Dublin to Berlin on 11/03/2016 for 2 adults and 1 children
+T:-> done: RyanAirBookFlightsStepDefinitions.WhenIMakeABookingFromToOnForAdultsAndChildren("Dublin", "Berlin", "11/03/2016", 2, 1) (2,8s)
+T:Then Choose flight page is displayed
+T:-> done: RyanAirBookFlightsStepDefinitions.ThenChooseFlightPageIsDisplayed() (0,1s)
+T:When I select flight number
+T:-> done: RyanAirBookFlightsStepDefinitions.WhenISelectFlightNumber() (1,8s)
+T:Then Extras page is displayed
+T:Error 1 raised: no such element: Unable to locate element: {"method":"name","selector":"q"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 2 raised: no such element: Unable to locate element: {"method":"name","selector":"q"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 3 raised: no such element: Unable to locate element: {"method":"name","selector":"q"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 4 raised: no such element: Unable to locate element: {"method":"name","selector":"q"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 5 raised: no such element: Unable to locate element: {"method":"name","selector":"q"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 6 raised: no such element: Unable to locate element: {"method":"name","selector":"q"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 7 raised: no such element: Unable to locate element: {"method":"name","selector":"q"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 8 raised: no such element: Unable to locate element: {"method":"name","selector":"q"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 9 raised: no such element: Unable to locate element: {"method":"name","selector":"q"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 10 raised: no such element: Unable to locate element: {"method":"name","selector":"q"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 11 raised: no such element: Unable to locate element: {"method":"name","selector":"q"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 12 raised: no such element: Unable to locate element: {"method":"name","selector":"q"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 13 raised: no such element: Unable to locate element: {"method":"name","selector":"q"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 14 raised: no such element: Unable to locate element: {"method":"name","selector":"q"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 15 raised: no such element: Unable to locate element: {"method":"name","selector":"q"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 16 raised: no such element: Unable to locate element: {"method":"name","selector":"q"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 17 raised: no such element: Unable to locate element: {"method":"name","selector":"q"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 18 raised: no such element: Unable to locate element: {"method":"name","selector":"q"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 19 raised: no such element: Unable to locate element: {"method":"name","selector":"q"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 20 raised: no such element: Unable to locate element: {"method":"name","selector":"q"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:-> done: RyanAirBookFlightsStepDefinitions.ThenExtrasPageIsDisplayed() (101,3s)
+T:When I select extras
+T:-> pending: RyanAirBookFlightsStepDefinitions.WhenISelectExtras()
+T:Then Passengers page is displayed
+T:-> skipped because of previous errors
+T:When I fill in passenger details with <passengername> and <passengersurname>
+T:-> skipped because of previous errors
+T:And I pay for booking with details
+T:  --- table step argument ---
+T:  | VISA | 5555555555555557 | 10/18 | 265 | Piotr | Kula | Address | Dublin | 12345 | Ireland |
+T:-> binding error: Parameter count mismatch! The binding method 'RyanAirBookFlightsStepDefinitions.WhenIPayForBookingWithDetails()' should have 1 parameters
+T:Then I should get payment declined message
+T:-> skipped because of previous errors
+Scheduler: dequeuing a rescheduled item: 6
+Scheduler: considering #6 for thread #0
+Scheduler: using #6 for thread #0
+Test #6 is scheduled for thread #0
+Test #6 is finished on thread #0 as Failed within 112,5806737 seconds
+Test #6/1 is started on thread #0
+T:*** Scenario:Book a one way flight for adults and children
+T:Given I am on RyanAir home page
+T:Error 1 raised: no such element: Unable to locate element: {"method":"xpath","selector":"//button/span[contains(@translate,'common.buttons.lets_go')]"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:-> done: RyanAirBookFlightsStepDefinitions.GivenIAmOnRyanAirHomePage() (6,8s)
+T:When I Select one way flight
+T:-> done: RyanAirBookFlightsStepDefinitions.WhenISelectOneWayFlight() (2,2s)
+T:When I make a booking from Dublin to Berlin on 11/03/2016 for 2 adults and 1 children
+T:-> error: unknown error: Element is not clickable at point (1201, 491). Other element would receive the click: <h3>...</h3>
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Then Choose flight page is displayed
+T:-> skipped because of previous errors
+T:When I select flight number
+T:-> skipped because of previous errors
+T:Then Extras page is displayed
+T:-> skipped because of previous errors
+T:When I select extras
+T:-> skipped because of previous errors
+T:Then Passengers page is displayed
+T:-> skipped because of previous errors
+T:When I fill in passenger details with <passengername> and <passengersurname>
+T:-> skipped because of previous errors
+T:And I pay for booking with details
+T:  --- table step argument ---
+T:  | VISA | 5555555555555557 | 10/18 | 265 | Piotr | Kula | Address | Dublin | 12345 | Ireland |
+T:-> binding error: Parameter count mismatch! The binding method 'RyanAirBookFlightsStepDefinitions.WhenIPayForBookingWithDetails()' should have 1 parameters
+T:Then I should get payment declined message
+T:-> skipped because of previous errors
+Scheduler: dequeuing a rescheduled item: 6
+Scheduler: considering #6 for thread #0
+Scheduler: using #6 for thread #0
+Test #6 is scheduled for thread #0
+Test #6 is finished on thread #0 as Failed within 10,1377691 seconds
+Test #6/2 is started on thread #0
+T:*** Scenario:Book a one way flight for adults and children
+T:Given I am on RyanAir home page
+T:Error 1 raised: no such element: Unable to locate element: {"method":"xpath","selector":"//button/span[contains(@translate,'common.buttons.lets_go')]"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:-> done: RyanAirBookFlightsStepDefinitions.GivenIAmOnRyanAirHomePage() (7,7s)
+T:When I Select one way flight
+T:-> done: RyanAirBookFlightsStepDefinitions.WhenISelectOneWayFlight() (1,2s)
+T:When I make a booking from Dublin to Berlin on 11/03/2016 for 2 adults and 1 children
+T:Error 1 raised: no such element: Unable to locate element: {"method":"id","selector":"continue"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 2 raised: no such element: Unable to locate element: {"method":"id","selector":"continue"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 3 raised: no such element: Unable to locate element: {"method":"id","selector":"continue"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 4 raised: no such element: Unable to locate element: {"method":"id","selector":"continue"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 5 raised: no such element: Unable to locate element: {"method":"id","selector":"continue"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 6 raised: no such element: Unable to locate element: {"method":"id","selector":"continue"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 7 raised: no such element: Unable to locate element: {"method":"id","selector":"continue"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 8 raised: no such element: Unable to locate element: {"method":"id","selector":"continue"}
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:-> done: RyanAirBookFlightsStepDefinitions.WhenIMakeABookingFromToOnForAdultsAndChildren("Dublin", "Berlin", "11/03/2016", 2, 1) (44,2s)
+T:Then Choose flight page is displayed
+T:Error 1 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 2 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 3 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 4 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 5 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 6 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 7 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 8 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 9 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 10 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 11 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 12 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 13 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 14 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 15 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 16 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 17 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 18 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 19 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 20 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:-> done: RyanAirBookFlightsStepDefinitions.ThenChooseFlightPageIsDisplayed() (0,3s)
+T:When I select flight number
+T:Error 1 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 2 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 3 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 4 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 5 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 6 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 7 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 8 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 9 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 10 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 11 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 12 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 13 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 14 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 15 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 16 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 17 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 18 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 19 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 20 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 1 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 2 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 3 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 4 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 5 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 6 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 7 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 8 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 9 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 10 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 11 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 12 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 13 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 14 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 15 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 16 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 17 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 18 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 19 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:Error 20 raised: no such window: target window already closed
+T:from unknown error: web view not found
+T:  (Session info: chrome=48.0.2564.103)
+T:  (Driver info: chromedriver=2.18.343845 (73dd713ba7fbfb73cbb514e62641d8c96a94682a),platform=Windows NT 10.0 x86_64)
+T:-> error: Object reference not set to an instance of an object.
+T:Then Extras page is displayed
+T:-> skipped because of previous errors
+T:When I select extras
+T:-> skipped because of previous errors
+T:Then Passengers page is displayed
+T:-> skipped because of previous errors
+T:When I fill in passenger details with <passengername> and <passengersurname>
+T:-> skipped because of previous errors
+T:And I pay for booking with details
+T:  --- table step argument ---
+T:  | VISA | 5555555555555557 | 10/18 | 265 | Piotr | Kula | Address | Dublin | 12345 | Ireland |
+T:-> binding error: Parameter count mismatch! The binding method 'RyanAirBookFlightsStepDefinitions.WhenIPayForBookingWithDetails()' should have 1 parameters
+T:Then I should get payment declined message
+T:-> skipped because of previous errors
+Test #6 is finished on thread #0 as Failed within 54,1654438 seconds
+Appdomain Disposed
+Total: 1 (test executions: 3)
+Succeeded: 0
+Ignored: 0
+Pending: 0
+Skipped: 0
+Failed: 1

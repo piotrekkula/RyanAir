@@ -1,4 +1,4 @@
-﻿namespace Project1.StepDefinitions
+﻿namespace RyanAirProject.StepDefinitions
 {
     using System;
     using System.Collections.Generic;
@@ -10,32 +10,35 @@
     using OpenQA.Selenium.Chrome;
     using OpenQA.Selenium.Firefox;
     using OpenQA.Selenium.IE;
+    using RyanAirProject.StepDefinitions;
 
     [Binding]
     public class Events : BaseStepDefinitions
     {
-        private const string GoogleUrl = "http://google.com";
-
         [BeforeTestRun]
-        public static void StartWebDriver()
+        public static void BeforeTestRun()
         {
-            // Using BeforeFeature, because AfterTestRun doesn't work (SpecFlow Defect#26)
-            // Driver = new FirefoxDriver();
-            // Driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 5));
-        }
-
-        [BeforeFeature]
-        public static void StartWebDriverForReal()
-        {
-            Driver = new FirefoxDriver();
+            ChromeOptions optionChrome = new ChromeOptions();
+            optionChrome.AddAdditionalCapability("chrome.noWebsiteTestingDefaults", false);
+            optionChrome.AddAdditionalCapability("chrome.applicationCacheEnabled", false);
+            Driver = new ChromeDriver();
+            Driver.Manage().Cookies.DeleteAllCookies();
+            Driver.Manage().Window.Maximize();
             Driver.Manage().Timeouts().ImplicitlyWait(new TimeSpan(0, 0, 5));
         }
 
-        [BeforeScenario]
-        public static void GoToHomePage()
+        [BeforeFeature]
+        public static void BeforeFeature()
         {
-            Thread.Sleep(1000); // between scenarios can be problematic when running too fast 
-            //Driver.Navigate().GoToUrl(GoogleUrl);
+            FeatureInfo s = FeatureContext.Current.FeatureInfo;
+            Console.WriteLine("*** Feature:" + s.Title);
+        }
+
+        [BeforeScenario]
+        public static void BeforeScenario()
+        {
+            ScenarioInfo s = ScenarioContext.Current.ScenarioInfo;
+            Console.WriteLine("*** Scenario:" + s.Title);
         }
 
         [AfterScenario]
@@ -52,8 +55,7 @@
         [AfterTestRun]
         public static void TerminateWebDriver()
         {
-            // Never Triggered due to Defect https://github.com/techtalk/SpecFlow/issues/#issue/26
-            Driver.Close();
+            Driver.Quit();
         }
     }
 }

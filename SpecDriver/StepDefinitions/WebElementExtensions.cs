@@ -1,4 +1,4 @@
-﻿namespace Project1
+﻿namespace RyanAirProject
 {
     using System;
     using OpenQA.Selenium;
